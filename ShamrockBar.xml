@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu>
+    <section name="Drinks">
+        <entry>
+            <item>Coke</item>
+            <price>2.50</price>
+        </entry>
+        <entry>
+            <item>Vodka</item>
+            <price>3.40</price>
+        </entry>
+        <entry vegetarian="true">
+            <item>Pinable</item>
+            <price>4.0</price>
+        </entry>
+    </section>
+     <section name="Side Dishes">
+        <entry>
+            <item>Patatas Bravas</item>
+            <price>5.40</price>
+        </entry>
+        <entry>
+            <item>Gyoza</item>
+            <price>8.40</price>
+        </entry>
+        <entry vegetarian="true">
+            <item>Spinach Bites</item>
+            <price>6.0</price>
+        </entry>
+    </section>
+     <section name="Breakfast">
+        <entry>
+            <item>Full Irish Breakie</item>
+            <price>12.50</price>
+        </entry>
+        <entry>
+            <item>Toastie</item>
+            <price>9.40</price>
+        </entry>
+        <entry vegetarian="true">
+            <item>Fruit Salad</item>
+            <price>4.50</price>
+        </entry>
+    </section>
+     <section name="Lunch">
+        <entry>
+            <item>Soup of the day</item>
+            <price>10.50</price>
+        </entry>
+        <entry>
+            <item>Lamb</item>
+            <price>14.40</price>
+        </entry>
+        <entry vegetarian="true">
+            <item>Green Curry</item>
+            <price>10.0</price>
+        </entry>
+    </section>
+    <section name="Dinner">
+        <entry>
+            <item>Chips</item>
+            <price>14.50</price>
+        </entry>
+        <entry>
+            <item>Sausages</item>
+            <price>9.40</price>
+        </entry>
+        <entry vegetarian="true">
+            <item>Green Burguer</item>
+            <price>6.0</price>
+        </entry>
+    </section>
+</menu>
