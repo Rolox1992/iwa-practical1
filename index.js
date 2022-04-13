@@ -32,8 +32,8 @@ router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'}); //Tell the user that the resource exists and which type that is
 
-    let xml = fs.readFileSync('PaddysCafe.xml', 'utf8'), //read in the XML file
-        xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8'); //read in the XSL file
+    let xml = fs.readFileSync('ShamrockBar.xml', 'utf8'), //read in the XML file
+        xsl = fs.readFileSync('ShamrockBar.xsl', 'utf8'); //read in the XSL file
 
     // console.log(xml);
     // console.log(xsl);
@@ -57,14 +57,14 @@ router.post('/post/json', function(req, res) {
 
         console.log(JSON.stringify(obj, null, " "))
 
-        XMLtoJSON('PaddysCafe.xml', function (err, result){
+        XMLtoJSON('ShamrockBar.xml', function (err, result){
             if (err) throw (err);
 
             result.menu.section[obj.sec_n].entry.push({'item': obj.item, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, " "));
 
-            JSONtoXML('PaddysCafe.xml', result, function(err){
+            JSONtoXML('ShamrockBar.xml', result, function(err){
                 if (err) console.log(err);
             });
 
@@ -86,7 +86,7 @@ router.post('/post/delete', function(req, res){
 
         console.log(obj)
 
-        XMLtoJSON('PaddysCafe.xml', function(err, result){
+        XMLtoJSON('ShamrockBar.xml', function(err, result){
             if (err) throw (err);
 
             console.log(obj.sec);
@@ -95,7 +95,7 @@ router.post('/post/delete', function(req, res){
             
             delete result.menu.section[obj.sec].entry[obj.ent];
 
-            JSONtoXML('PaddysCafe.xml', result, function(err){
+            JSONtoXML('ShamrockBar.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
